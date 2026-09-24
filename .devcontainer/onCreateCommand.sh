@@ -45,7 +45,7 @@ cp /tmp/$REPOSITORY/windows/data.img /workspaces/$REPOSITORY/windows/data.img
     echo "services:"
     echo "  windows:"
     echo "    container_name: windows"
-    echo "    image: dockurr/windows:latest"
+    echo "    image: dockurr/windows:v5.10"
     echo "    environment:"
     echo "      CPU_CORES: $(nproc --all)"
     echo "      RAM_SIZE: $(free --gibi | grep 'Mem:' | awk '{print $7}')G"
